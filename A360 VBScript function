@@ -1,0 +1,11 @@
+Function GetYearIfDate(dateString)
+  Dim vdate
+
+  ' Check if the string is a valid date
+  If IsDate(dateString) Then
+    vdate = CDate(dateString)
+    GetYearIfDate = Year(vdate)
+  Else
+    GetYearIfDate = "Invoice Date is not a string"
+  End If
+End Function
